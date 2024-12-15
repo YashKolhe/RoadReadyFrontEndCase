@@ -39,7 +39,7 @@ const BrowseCars = () => {
     <div className="browse-cars-container">
         <div>
         <nav className="car-nav">
-            <a href="/user-dashboard">Previous</a>
+            <a href="/user-dashboard">DashBoard</a>
           <a href="/profilepage">Profile</a>
           {/* <a href="#reservations">My Reservations</a> */}
           <a href="/login">Logout</a>
@@ -50,7 +50,7 @@ const BrowseCars = () => {
       <div className="cars-grid">
         {cars.map((car) => (
           <div key={car.id} className="car-card">
-            {/* <img src={car.image} alt={car.name} className="car-image" />  */}
+            <img src={car.image} alt={car.name} className="car-image" /> 
             <div className="car-details">
               <h2>{car.carId}.{car.model} </h2>
               <h3>{car.make}</h3>

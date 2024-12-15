@@ -212,6 +212,7 @@ const Cars = () => {
       )}
 
       {/* Cars Table */}
+      <div class="table-responsive">
       <table className="cars-table">
         <thead>
           <tr>
@@ -347,7 +348,7 @@ const Cars = () => {
             )
           )}
         </tbody>
-      </table>
+      </table></div>
 
       {/* Pagination Controls */}
       <div className="pagination-controls">

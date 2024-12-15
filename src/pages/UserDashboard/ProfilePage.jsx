@@ -39,13 +39,13 @@ const ProfilePage = () => {
           setUpdatedUser(userResponse.data);
 
           const USERID = userResponse.data.userId;
-
+         console.log("Userid +++++++++++++++++",USERID);
           // Fetch reservations
           const reservationsResponse = await axios.get(
             `https://localhost:7087/api/Reservation/user/${USERID}`,
             { headers: { Authorization: `Bearer ${token}` } }
           );
-          console.log("Reservations:", reservationsResponse.data);
+          console.log("Reservations:======", reservationsResponse.data);
           setReservations(reservationsResponse.data.$values || []);
 
           // Fetch payments
@@ -108,7 +108,7 @@ const ProfilePage = () => {
   return (
     <div className="profile-container">
       <nav className="profile-nav">
-        <a href="/user-dashboard">Previous</a>
+        <a href="/user-dashboard">DashBoard</a>
         <a href="/login">Logout</a>
       </nav>
 

@@ -93,7 +93,7 @@ const ReviewsPage = () => {
   return (
     <div className="reviews-container">
       <nav className="reviews-nav">
-        <a href="/user-dashboard">Home</a>
+        <a href="/user-dashboard">Dashboard</a>
         <a href="/login">Logout</a>
       </nav>
 

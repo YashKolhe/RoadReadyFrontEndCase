@@ -161,7 +161,7 @@ const AdminDashboard = () => {
           </Routes>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

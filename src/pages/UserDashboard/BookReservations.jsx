@@ -118,7 +118,7 @@ const BookReservations = () => {
   return (
     <div className="book-reservations-container">
       <nav className="bookreser-nav">
-        <a href="/user-dashboard">Home</a>
+        <a href="/user-dashboard">DashBoard</a>
         <a href="/login">Logout</a>
       </nav>
       
@@ -126,7 +126,7 @@ const BookReservations = () => {
       <div className="cars-grid">
         {cars.map((car) => (
           <div key={car.id} className="car-card">
-            {/* <img src={car.image} alt={car.name} className="car-image" /> */}
+            <img src={car.image} alt={car.name} className="car-image" />
             <div className="car-details">
               <h2>{car.carId}.{car.model}</h2>
               <p>Price: ${car.pricePerDay}/day</p>
