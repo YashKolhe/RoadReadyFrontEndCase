@@ -190,7 +190,7 @@
   border: 1px solid var(--border-color);
   border-radius: 15px;
   padding: 25px;
-  width: 350px;
+  width: 500px;
   text-align: left;
   box-shadow: inset 1px 1px 18px 12px rgba(0, 0, 0, 0.2);  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
@@ -204,7 +204,7 @@
 
 /* Quote Marker */
 .review-card::before {
-  content: '"';
+  content: '';
   position: absolute;
   top: -20px;
   left: -15px;

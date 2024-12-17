@@ -53,7 +53,7 @@ const ProfilePage = () => {
             `https://localhost:7087/api/Payment/user/${USERID}`,
             { headers: { Authorization: `Bearer ${token}` } }
           );
-          console.log("Payments:", paymentsResponse.data);
+          console.log("Payments Data +++++++++++++++:", paymentsResponse.data);
           setPayments(paymentsResponse.data.$values || []);
 
           setLoading(false);

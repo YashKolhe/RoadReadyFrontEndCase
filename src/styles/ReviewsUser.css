@@ -42,7 +42,7 @@ body {
 
 /* Navigation */
 .reviews-nav {
-  background-color: var(--nav-background);
+  background-color: rgba(107, 213, 114, 0.1);
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -89,7 +89,7 @@ body {
 
 /* Review Card */
 .review-card {
-  background-color: var(--card-background);
+  background-color: rgba(150, 173, 198, 0.5);
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
@@ -140,7 +140,7 @@ textarea {
   font-size: 1rem;
   resize: vertical;
   height: 120px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
   color: var(--text-color-light);
   transition: all 0.3s ease;
 }

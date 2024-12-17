@@ -126,9 +126,10 @@ const BookReservations = () => {
       <div className="cars-grid">
         {cars.map((car) => (
           <div key={car.id} className="car-card">
-            <img src={car.image} alt={car.name} className="car-image" />
+            <img src={car.imageUrl} alt={car.name} className="car-image" />
             <div className="car-details">
               <h2>{car.carId}.{car.model}</h2>
+              <h3>{car.make}</h3>
               <p>Price: ${car.pricePerDay}/day</p>
               <button onClick={() => handleBookNow(car)}>Book Now</button>
             </div>
@@ -166,18 +167,6 @@ const BookReservations = () => {
                 required
               />
             </div>
-            {/* <div className="form-group">
-              <label htmlFor="payment-method">Payment Method:</label>
-              <select
-                id="payment-method"
-                value={paymentMethod}
-                onChange={(e) => setPaymentMethod(e.target.value)}
-              >
-                <option value="Credit Card">Credit Card</option>
-                <option value="PayPal">PayPal</option>
-                <option value="Bank Transfer">Bank Transfer</option>
-              </select>
-            </div> */}
             <p>
               <strong>Total Price:</strong> ${calculateTotal()}
             </p>

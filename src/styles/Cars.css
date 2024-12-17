@@ -39,7 +39,7 @@ h2::after {
 }
 
 .cars-table th, .cars-table td {
-  padding: 12px;
+  padding: 1px;
   text-align: center;
   border-bottom: 1px solid #e0e0e0; /* Add a bottom border for separation */
 }
